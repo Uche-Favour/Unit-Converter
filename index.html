@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="queries.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <section id="conversion-section">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" id="input-tab" value="20" min="0">
+
+            <button id="convertBtn">Convert</button>
+
+        </section>
+
+        <div class="sub-container">
+             
+        
+            <section class="display" id="length">
+                <h4 >Length (Meter/Feet)</h3>
+                <p id="length-dp" ></p>
+
+            </section>
+
+            <section class="display" id="volume">
+                <h4 >Volume (Liters/Gallons)</h3>
+                <p id="volume-dp"></p>
+
+            </section>
+
+            <section class="display" id="mass">
+                <h4 >Mass (Kilograms/Pounds)</h3>
+                <p id="mass-dp" ></p>
+
+            </section>
+
+        </div>
+
+        
+
+    </div>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
