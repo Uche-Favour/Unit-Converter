@@ -233,14 +233,15 @@ p{
 }
 
 #themeBtn{
-    position: absolute;
-    right: 100px;
-    top: 1rem;
+    position: fixed;
+    right: 2rem;
+    top: 1.5rem;
     padding: 1rem;
+    border-radius: 50%;
 }
 
 img{
-    width: 2rem;
+    width: 1.5rem;
     color: var(--secondary-base);
 }
 
