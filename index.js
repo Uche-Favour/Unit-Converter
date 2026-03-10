@@ -7,12 +7,18 @@ let massDp = document.getElementById("mass-dp");
 const toggle = document.getElementById('toggleInput');
 
 const convertBtn = document.getElementById("convertBtn");
+const themeBtn = document.getElementById("themeBtn")
 
 convertBtn.addEventListener('click', ()=>{
     console.log("clicked")
     let value = inputTab.value;
     converter(value)
 })
+
+themeBtn.addEventListener('click', ()=>{
+    changeTheme();
+})
+
 
 function converter(num){
     
@@ -41,4 +47,20 @@ function converter(num){
     massDp.textContent = `${num} kilos = ${kilo2Pound} pounds | ${num} pounds = ${pound2Kilo} kilos`;
 
 
+}
+
+function changeTheme(){
+    let body = document.body;
+    let themeIcon = document.getElementById("themeIcon");
+
+    body.classList.toggle('darkmode');
+
+    if(themeIcon.src.includes('image/sunny-outline.svg')){
+        themeIcon.src = 'image/moon-outline.svg';
+        themeIcon.alt = "night-mode";
+
+    }else{
+        themeIcon.src = 'image/sunny-outline.svg';
+        themeIcon.alt = "day-mode";
+    }
 }

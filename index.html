@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main-container">
+    <main class="main-container">
         <section id="conversion-section">
             <h1>Metric/Imperial Unit Conversion</h1>
             <input type="number" id="input-tab" value="20" min="0">
@@ -22,32 +22,36 @@
 
         </section>
 
-        <div class="sub-container">
+        <section class="sub-container">
              
         
             <section class="display" id="length">
-                <h4 >Length (Meter/Feet)</h3>
+                <h3 >Length (Meter/Feet)</h3>
                 <p id="length-dp" ></p>
 
             </section>
 
             <section class="display" id="volume">
-                <h4 >Volume (Liters/Gallons)</h3>
+                <h3 >Volume (Liters/Gallons)</h3>
                 <p id="volume-dp"></p>
 
             </section>
 
             <section class="display" id="mass">
-                <h4 >Mass (Kilograms/Pounds)</h3>
+                <h3 >Mass (Kilograms/Pounds)</h3>
                 <p id="mass-dp" ></p>
 
             </section>
 
-        </div>
+        </section>
+
+        <button id="themeBtn"><img src="image/sunny-outline.svg" alt="day mode" id="themeIcon"></button>
+        
+
+    </main>
 
         
 
-    </div>
 
 
     <script src="index.js"></script>
